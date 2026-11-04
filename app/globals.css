@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-main: #13261f;
+  --bg-surface: #1b342b;
+  --bg-elevated: #162c24;
+  --border-subtle: #2b4f42;
+  --accent-cta: #c27b38;
+  --accent-cta-hover: #a86529;
+  --accent-sage: #7ba28a;
+  --text-primary: #f4f3ee;
+  --text-secondary: #9eaca2;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+  }
+
+  body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    @apply antialiased selection:bg-[#c27b38] selection:text-[#f4f3ee];
+  }
+}
